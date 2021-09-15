@@ -1,0 +1,1 @@
+INSERT INTO POSTAL_ADDRESS (POST_CODE, suburb) values  ('3163', 'carnegie'), ('3008', 'docklands'), ('3024', 'wyndham');
