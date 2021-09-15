@@ -17,6 +17,7 @@ Current State:
 The current development state is completely functional for below requirements:
 - fetch suburb details if postal code is passed as a request parameter.
 - fetch postcode details if suburb is passed as a request parameter.
+- The static address data is loaded into in memory database H2 on application start up. The table is designed as SUBURB [VARCHAR 50] [PRIMAR KEY], POSTCODE [VARCHAR 50].
 
 To-Do:
 ------
@@ -25,6 +26,7 @@ Enhance the solution for below requirement:
 - Enhance the solution to enable client to post new address details (postcode, suburb) for future reference.
 - Add security layer.
 - Develop different profiles to be enabled to be deployed on different environments.
+- Database can be replaced with persistent rather than in memory.
 - Add more test cases for unit tests and system tests to validate all the boundary conditions and code coverage.
 - Come up with build strategy to be deployed on AWS instance.
 
@@ -42,7 +44,7 @@ Features & Usage:
 ----------------
 * Actuator feature is incorporated to provide out of the box features of spring boot.
 * DevTools feature is incorporated to prove hot deployment while developing.
-The API integration test postman collection is placed in project root directory : Address API.postman_collection.json
+* The API integration test postman collection is placed in project root directory : \Address API.postman_collection.json
 
 API End points:
 
